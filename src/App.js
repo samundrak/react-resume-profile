@@ -1,28 +1,33 @@
-import './App.css';
 import React, { Component } from 'react';
+import PropsTypes from 'prop-types';
+import { BrowserRouter as Router } from 'react-router-dom';
+import dataSource from './source';
 import SimpleLayout from './components/SimpleLayout';
-import { Icon, Collapse } from 'antd';
-import AboutMe from './components/AboutMe';
-import InfoIcon from './components/InfoIcon';
-import mappedComps from './mappedComps';
-
-const Panel = Collapse.Panel;
+import Routes from './Routes';
+import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      source: dataSource,
+    };
+  }
+  getChildContext() {
+    return { source: this.state.source };
+  }
   render() {
     return (
-      <SimpleLayout render={(profile) => (
-        <Collapse bordered={false} defaultActiveKey={['About Me']}>
-          {mappedComps.map((item) => (
-            <Panel header={<InfoIcon type={item.iconType} info={item.header} />} key={item.header}>
-              {item.component()}
-            </Panel>
-          ))}
-        </Collapse>
-      )}>
-      </SimpleLayout >
+      <Router>
+        <SimpleLayout source={this.state.source}>
+          <Routes pages={this.state.pages} />
+        </SimpleLayout>
+      </Router>
     );
   }
 }
 
+App.childContextTypes = {
+  source: PropsTypes.object,
+};
 export default App;

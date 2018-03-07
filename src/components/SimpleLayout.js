@@ -1,65 +1,46 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Timeline } from 'react-twitter-widgets'
-import { Layout, Menu, Breadcrumb } from 'antd';
-import { Row, Col } from 'antd';
-import source from '../source';
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import { Layout, Row, Col } from 'antd';
+import PropTypes from 'prop-types';
+import LinkedIn from './widgets/LinkedIn';
+import Twitter from './widgets/Twitter';
 
-const { Header, Content, Sider, Footer } = Layout;
+const { Content, Footer } = Layout;
 
-class SimpleLayout extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      profile: source,
-    }
-  }
+const SimpleLayout = ({ source, children }) => (
+  <Layout className="layout">
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{source.title}</title>
+      <script
+        type="text/javascript"
+        src="https://platform.linkedin.com/badges/js/profile.js"
+        async
+        defer
+      />
+    </Helmet>
+    <Content style={{ padding: '0 50px' }}>
+      <br />
+      <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+        <Row>
+          <Col span={6}>
+            {source.social.linkedIn && (
+            <LinkedIn username={source.social.linkedIn.username} title={source.title} />
+              )}
+          </Col>
+          <Col span={12}>{children}</Col>
+          <Col span={6}>
+            {source.social.twitter && <Twitter username={source.social.twitter.username} />}
+          </Col>
+        </Row>
+      </div>
+    </Content>
+    <Footer style={{ textAlign: 'center' }}>{source.title}</Footer>
+  </Layout>
+);
 
-  shouldComponentUpdate() {
-    return false;
-  }
-
-  render() {
-    const { profile } = this.state;
-    return (
-      <Layout className="layout">
-        <Helmet>
-          <meta charSet="utf-8" />
-          <title>{profile.title}</title>
-          <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-        </Helmet>
-        <Content style={{ padding: '0 50px' }}>
-          <br />
-          <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-            <Row>
-              <Col span={6}>
-                <div className="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity={profile.social.linkedIn.username}>
-                  <a className="LI-simple-link" href={'https://np.linkedin.com/in/${profile.social.linkedIn.username}?trk=profile-badge'}>{profile.title}</a>
-                </div>
-              </Col>
-              <Col span={12}>
-                {this.props.render(profile)}
-              </Col>
-              <Col span={6}>
-                <Timeline
-                  dataSource={{
-                    sourceType: 'profile',
-                    screenName: profile.social.twitter.username
-                  }}
-                  options={{
-                    username: profile.social.twitter.username,
-                    height: '400'
-                  }}
-                />
-              </Col>
-            </Row></div>
-        </Content>
-        <Footer style={{ textAlign: 'center' }}>
-          {profile.title}
-        </Footer>
-      </Layout>
-    );
-  }
-}
-
+SimpleLayout.propTypes = {
+  children: PropTypes.element.isRequired,
+  source: PropTypes.object.isRequired, // eslint-disable-line
+};
 export default SimpleLayout;
