@@ -11,7 +11,6 @@ class Home extends React.Component {
   constructor() {
     super();
     this.state = {};
-    console.log(this.context);
   }
 
   render() {
@@ -26,7 +25,7 @@ class Home extends React.Component {
             >
               {item.component(home.tabs[camelCase(item.header)])}
             </Panel>
-            ))
+          ))
           : ''}
       </Collapse>
     );

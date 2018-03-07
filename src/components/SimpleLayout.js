@@ -18,6 +18,7 @@ const SimpleLayout = ({ source, children }) => (
         async
         defer
       />
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
     </Helmet>
     <Content style={{ padding: '0 50px' }}>
       <br />
@@ -25,8 +26,8 @@ const SimpleLayout = ({ source, children }) => (
         <Row>
           <Col span={6}>
             {source.social.linkedIn && (
-            <LinkedIn username={source.social.linkedIn.username} title={source.title} />
-              )}
+              <LinkedIn username={source.social.linkedIn.username} title={source.title} />
+            )}
           </Col>
           <Col span={12}>{children}</Col>
           <Col span={6}>
