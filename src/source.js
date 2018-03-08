@@ -1,15 +1,15 @@
 export default {
   title: 'Samundra Khatri',
   social: {
-    linkedIn: {
-      username: 'samundrak',
-    },
-    twitter: {
-      username: 'kardnumas',
-    },
-    github: {
-      username: 'samundrak',
-    },
+    // linkedIn: {
+    //   username: 'samundrak',
+    // },
+    // twitter: {
+    //   username: 'kardnumas',
+    // },
+    // github: {
+    //   username: 'samundrak',
+    // },
   },
   home: {
     tabs: {
@@ -28,23 +28,34 @@ export default {
           {
             language: 'javascript',
             years: 3,
+            rate: 7,
           },
           {
             language: 'java',
             years: 1,
+            rate: 3,
           },
           {
             language: 'php',
             years: 1,
+            rate: 3,
           },
           {
             language: 'html',
             years: 3,
+            rate: 5,
           },
           {
             language: 'laravel',
             years: 0.6,
+            rate: 2,
           },
+          {
+            language: 'vue',
+            years: 1.5,
+            rate: 6,
+          },
+          { language: 'react', years: 2, rate: 6 },
           'jquery',
           'bootstrap',
           'html',
