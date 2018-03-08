@@ -2,8 +2,8 @@ import React from 'react';
 import { Collapse } from 'antd';
 import PropTypes from 'prop-types';
 import camelCase from 'lodash.camelcase';
-import InfoIcon from '../../components/InfoIcon';
-import mappedComps from '../../mappedComps';
+import InfoIcon from '../components/InfoIcon';
+import mappedComps from '../mappedComps';
 
 const { Panel } = Collapse;
 

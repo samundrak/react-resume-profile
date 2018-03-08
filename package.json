@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.2.3",
+    "axios": "^0.18.0",
     "date-fns": "^1.29.0",
     "eslint": "4.14.0",
     "eslint-config-airbnb": "^16.1.0",

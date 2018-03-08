@@ -7,6 +7,9 @@ export default {
     twitter: {
       username: 'kardnumas',
     },
+    github: {
+      username: 'samundrak',
+    },
   },
   home: {
     tabs: {
@@ -42,8 +45,19 @@ export default {
             language: 'laravel',
             years: 0.6,
           },
-          'jquery', 'bootstrap', 'html', 'css', 'socket.io', 'mongodb',
-          'meteor', 'mysql', 'd3.js', 'libgdx', 'ubuntu', 'linux', 'nginx'
+          'jquery',
+          'bootstrap',
+          'html',
+          'css',
+          'socket.io',
+          'mongodb',
+          'meteor',
+          'mysql',
+          'd3.js',
+          'libgdx',
+          'ubuntu',
+          'linux',
+          'nginx',
         ],
       },
       experience: {
@@ -52,11 +66,21 @@ export default {
             title: 'Javascript Developer',
             company: {
               name: ' Javra Software Nepal',
-              website: 'https://javra.com'
+              website: 'https://javra.com',
             },
             startedAt: '2017-12-11',
             endAt: null,
-            stacks: ['javascript', 'reactjs', 'vue.js', 'webpack', 'fabricjs', 'redux', 'flow', 'jest', 'codeceptjs'],
+            stacks: [
+              'javascript',
+              'reactjs',
+              'vue.js',
+              'webpack',
+              'fabricjs',
+              'redux',
+              'flow',
+              'jest',
+              'codeceptjs',
+            ],
             points: [
               'Led the development and adoption of React to a dashboard web app.',
               'Write application using latest EcmaScript specification',
@@ -74,43 +98,51 @@ export default {
             title: 'Javascript Developer',
             company: {
               name: 'Introcept Nepal',
-              website: 'https://nepal.introcept.co'
+              website: 'https://nepal.introcept.co',
             },
             startedAt: '2016-6-1',
             endAt: '2017-11-31',
-            stacks: ["vue.js,", "webpack,", "javascript,", "ecmascript-6,", "reactjs,", "vuex,", "node.js"],
+            stacks: [
+              'vue.js,',
+              'webpack,',
+              'javascript,',
+              'ecmascript-6,',
+              'reactjs,',
+              'vuex,',
+              'node.js',
+            ],
             points: [
-              "Part of the front end development team of their Vue web app.",
-              "Managed application state maintaining the Single source of truth. (Vuex)",
-              "Developed & maintained reusable components repository.",
-              "Maintained Code quality, frontend project structure. (Linting/Strict typing)",
-              "Developed RESTful API using laravel.",
-              "Managed the application using bundling tool. (Webpack)",
-              "Regularly Monitored application performance.(Sentry/DevTools)",
-              "Delivered scalable client application (https://agentcis.com/)",
-              "Managed Knowledge sharing session and Presentation of new trends internally",
-              "Prevented Security issues XSS, CSRF",
-              "Optimization, Refactor and Gained Performance with things like code splitting, Service worker, web worker, clientside"
+              'Part of the front end development team of their Vue web app.',
+              'Managed application state maintaining the Single source of truth. (Vuex)',
+              'Developed & maintained reusable components repository.',
+              'Maintained Code quality, frontend project structure. (Linting/Strict typing)',
+              'Developed RESTful API using laravel.',
+              'Managed the application using bundling tool. (Webpack)',
+              'Regularly Monitored application performance.(Sentry/DevTools)',
+              'Delivered scalable client application (https://agentcis.com/)',
+              'Managed Knowledge sharing session and Presentation of new trends internally',
+              'Prevented Security issues XSS, CSRF',
+              'Optimization, Refactor and Gained Performance with things like code splitting, Service worker, web worker, clientside',
             ],
           },
           {
             title: 'NodeJS Developer',
             company: {
-              name: 'ZyobaLabs'
+              name: 'ZyobaLabs',
             },
             startedAt: '2015-3-3',
             endAt: '2016-5-31',
-            stacks: ["node.js,", "angularjs,", "express,", "mongodb,", "d3.js"],
+            stacks: ['node.js,', 'angularjs,', 'express,', 'mongodb,', 'd3.js'],
             points: [
               "Built API's using express",
-              "Analyzed code quality and application performance",
-              "Integrated API with AngularJS",
-              "Analyzed user experience",
-              "Full stack development using Node.js, Express, Angular, and Mysql",
-              "Delivered fast and speedy client interface",
-              "Created charts and visualization using D3, D3plus"
-            ]
-          }
+              'Analyzed code quality and application performance',
+              'Integrated API with AngularJS',
+              'Analyzed user experience',
+              'Full stack development using Node.js, Express, Angular, and Mysql',
+              'Delivered fast and speedy client interface',
+              'Created charts and visualization using D3, D3plus',
+            ],
+          },
         ],
       },
       resume: {
