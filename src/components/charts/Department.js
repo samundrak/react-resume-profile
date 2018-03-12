@@ -1,14 +1,13 @@
 import React from 'react';
 import { Col, Row } from 'antd';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
-import { normalizeSkillForChart } from '../../utils';
 
-export default ({ items: skills }) => (
+export default ({ department }) => (
   <React.Fragment>
     <BarChart
       width={600}
       height={300}
-      data={normalizeSkillForChart(skills, 'rate')}
+      data={department}
       margin={{
         top: 20,
         right: 30,
@@ -16,17 +15,17 @@ export default ({ items: skills }) => (
         bottom: 5,
       }}
     >
-      <XAxis dataKey="name" />
+      <XAxis dataKey="title" />
       <YAxis />
       <CartesianGrid strokeDasharray="3 3" />
       <Tooltip />
-      <Bar dataKey="rate" stackId="a" fill="#82ca9d" />
+      <Bar dataKey="rate" stackId="a" fill="#FFBB28" />
     </BarChart>
     <Row>
       <Col span={12} offset={6}>
         <h4>
           <u>
-            <i>Rating my expertise on scale out of 10.</i>
+            <i>Rating my expertise on department on scale out of 10.</i>
           </u>
         </h4>
       </Col>

@@ -24,6 +24,13 @@ export default {
             `,
       },
       skills: {
+        department: [
+          { title: 'Frontend', rate: 8 },
+          { title: 'Backend', rate: 6 },
+          { title: 'DevOps', rate: 2 },
+          { title: 'Web design', rate: 3 },
+          { title: 'Database', rate: 4 },
+        ],
         items: [
           {
             language: 'javascript',
@@ -115,15 +122,7 @@ export default {
             },
             startedAt: '2016-6-1',
             endAt: '2017-11-31',
-            stacks: [
-              'vue.js,',
-              'webpack,',
-              'javascript,',
-              'ecmascript-6,',
-              'reactjs',
-              'vuex',
-              'node.js',
-            ],
+            stacks: ['vue.js', 'webpack', 'javascript', 'ecmascript', 'reactjs', 'vuex', 'node.js'],
             points: [
               'Part of the front end development team of their Vue web app.',
               'Managed application state maintaining the Single source of truth. (Vuex)',

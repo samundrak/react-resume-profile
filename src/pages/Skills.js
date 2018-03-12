@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import SkillCom from '../components/tabs/Skills';
 import SkillChart from '../components/charts/Skills';
 import ExpertiseChart from '../components/charts/Expertise';
+import DepartmentChart from '../components/charts/Department';
 
 const { Panel } = Collapse;
 
@@ -19,6 +20,10 @@ const data = [
   {
     title: 'Expertise',
     component: ExpertiseChart,
+  },
+  {
+    title: 'Department',
+    component: DepartmentChart,
   },
 ];
 class Skills extends React.Component {
