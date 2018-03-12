@@ -58,7 +58,11 @@ const SimpleLayout = ({ source, children }) => (
         </Row>
       </div>
     </Content>
-    <Footer style={{ textAlign: 'center' }}>{source.title}</Footer>
+    <Footer style={{ textAlign: 'center' }}>
+      <a href="https://github.com/samundrak/react-resume-profile">
+        Look source code of this project
+      </a>{' '}
+    </Footer>
   </Layout>
 );
 

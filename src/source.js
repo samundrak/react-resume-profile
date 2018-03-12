@@ -72,6 +72,8 @@ export default {
         ],
       },
       experience: {
+        content:
+          'As a self learner, I started programming from mid of 2012, started from PHP and then HTML, CSS, Javascript. Learned it for a whole day of 2013 and then I started learning android and java from 2014-2015.In between this years, i also learned database, networking and built projects like a clone of google adsense and google analytics, android mobile games and apps, windows desktop software. On March 2015 I got my first job and started working with team.',
         items: [
           {
             title: 'Javascript Developer',
@@ -118,8 +120,8 @@ export default {
               'webpack,',
               'javascript,',
               'ecmascript-6,',
-              'reactjs,',
-              'vuex,',
+              'reactjs',
+              'vuex',
               'node.js',
             ],
             points: [
@@ -143,7 +145,7 @@ export default {
             },
             startedAt: '2015-3-3',
             endAt: '2016-5-31',
-            stacks: ['node.js,', 'angularjs,', 'express,', 'mongodb,', 'd3.js'],
+            stacks: ['nodejs', 'angularjs', 'expressjs', 'mongodb', 'd3js'],
             points: [
               "Built API's using express",
               'Analyzed code quality and application performance',
