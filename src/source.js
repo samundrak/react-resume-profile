@@ -1,15 +1,15 @@
 export default {
   title: 'Samundra Khatri',
   social: {
-    // linkedIn: {
-    //   username: 'samundrak',
-    // },
-    // twitter: {
-    //   username: 'kardnumas',
-    // },
-    // github: {
-    //   username: 'samundrak',
-    // },
+    linkedIn: {
+      username: 'samundrak',
+    },
+    twitter: {
+      username: 'kardnumas',
+    },
+    github: {
+      username: 'samundrak',
+    },
   },
   home: {
     tabs: {
