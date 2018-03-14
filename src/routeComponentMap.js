@@ -1,6 +1,7 @@
 import Home from './pages/Home';
 import Skills from './pages/Skills';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 
 export default [
   {
@@ -19,6 +20,12 @@ export default [
     route: '/experience',
     component: Experience,
     name: 'Experience',
+    inMenu: true,
+  },
+  {
+    route: '/projects',
+    component: Projects,
+    name: 'Projects',
     inMenu: true,
   },
 ];

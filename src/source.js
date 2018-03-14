@@ -1,15 +1,15 @@
 export default {
   title: 'Samundra Khatri',
   social: {
-    linkedIn: {
-      username: 'samundrak',
-    },
-    twitter: {
-      username: 'kardnumas',
-    },
-    github: {
-      username: 'samundrak',
-    },
+    // linkedIn: {
+    //   username: 'samundrak',
+    // },
+    // twitter: {
+    //   username: 'kardnumas',
+    // },
+    // github: {
+    //   username: 'samundrak',
+    // },
   },
   home: {
     tabs: {
@@ -162,4 +162,115 @@ export default {
       },
     },
   },
+  projects: [
+    {
+      name: 'Web',
+      items: [
+        {
+          name: 'Agentcis',
+          url: 'https://agentcis.com',
+          description: 'Client relation manager, invoice trackings',
+          role: 'Frontend Developer',
+        },
+        {
+          name: 'vDiscover',
+          description: 'School management System',
+          role: 'Frontend/Backend Developer',
+        },
+        {
+          name: 'Savetodrive',
+          url: 'https://savetodrive.net',
+          description: 'Save web files to your cloud drives.',
+          role: 'Frontend/Backend Developer',
+        },
+      ],
+      icon: 'global',
+    },
+    {
+      name: 'NPM Modules',
+      items: [
+        {
+          name: 'Solti',
+          url: 'https://www.npmjs.com/package/solti',
+          description:
+            'Solti is an cli tool to generate React & Vue Component decorated with patterns that are widely used and mostly taken from site React Patterns and others.',
+          role: 'Author',
+        },
+        {
+          name: 'Thekdar',
+          url: 'https://www.npmjs.com/package/thekdar',
+          role: 'Author',
+          description:
+            'Thekdar is module which will manage node child process , it will help us creating workers, distribute task across workers, kill workers or limit there work',
+        },
+        {
+          name: 'ExpressJS API Explorer',
+          url: 'https://www.npmjs.com/package/expressjs-api-explorer',
+          description:
+            "Expressjs api explorer is an API Explorer module of expressJS where you can see all the registered api's of express also with the middleware attached. You can see the route method type and more",
+        },
+      ],
+      icon: 'pushpin',
+    },
+    {
+      name: 'Mobile Apps',
+      items: [
+        {
+          name: 'Luck You',
+          description: "A fun app to output user's luck",
+          url: 'https://github.com/samundrak/LuckYou',
+        },
+      ],
+      icon: 'android',
+    },
+    {
+      name: 'Games',
+      items: [
+        {
+          name: 'ColorBlind',
+          url: 'https://github.com/samundrak/ColorBlind',
+          description: 'A Color Matching android game much like color switch.',
+        },
+        {
+          name: 'DailaMaara',
+          url: 'https://github.com/samundrak/Dailamaara',
+          description: 'Dahalmaara is cross platform card game made on LibGDX.',
+        },
+      ],
+      icon: 'shake',
+    },
+    {
+      name: 'Desktop Software',
+      items: [
+        {
+          name: 'SpriteSheet Maker',
+          description:
+            'Spritesheet Maker is a application where you will import sprites from any folder into the program. You can decide the padding inside sprite itself new width and hieght of sprite and margin right and bottom between the sprites after that you can click on preview to preview the outcome or click on Generate SpriteSheet button to generate spriteshee…',
+          url: 'https://github.com/samundrak/SpriteSheetMaker',
+        },
+        {
+          name: 'JustFast',
+          url: 'https://github.com/samundrak/JustFast',
+          description:
+            'JustFast is a simple program based on FTP. It was useful for me to transfer the android app made in eclipse to mobile from ftp. Any FTP program in android device that supports FTP can be helpful to transfer file. Something that we can see is the file transfer rate in Byte, Kilo Byte and Mega Byte which may be very useful for developing process.',
+        },
+      ],
+      icon: 'windows',
+    },
+    {
+      name: 'Browser Extensions',
+      items: [],
+      icon: 'chrome',
+    },
+    {
+      name: 'IDE/Editor Plugin',
+      items: [],
+      icon: 'code',
+    },
+    {
+      name: 'Social media application and Bots',
+      items: [],
+      icon: 'facebook',
+    },
+  ],
 };

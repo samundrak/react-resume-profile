@@ -10,4 +10,7 @@ export function normalizeSkillForChart(skills, sort = 'years', key = 'language')
   ).reverse();
 }
 
-export function noop() {}
+export function limitString(string, limit = 50) {
+  if (string.length < limit) return string;
+  return `${string.substring(0, limit)}...`;
+}
