@@ -183,6 +183,11 @@ export default {
           description: 'Save web files to your cloud drives.',
           role: 'Frontend/Backend Developer',
         },
+        {
+          name: 'Simple Forum',
+          description: 'A simple forum app made with Nodejs, ExpressJs, NextJs, ReactJs, AntDesign',
+          url: 'https://github.com/samundrak/simple-forum',
+        },
       ],
       icon: 'global',
     },
@@ -259,17 +264,38 @@ export default {
     },
     {
       name: 'Browser Extensions',
-      items: [],
+      items: [
+        {
+          name: 'DBSole',
+          url: 'https://github.com/samundrak/DBSole',
+          description:
+            'Access your database from your Google chrome DevTool. No need to switch over terminal or phpMyAdmin just open your console and start querying',
+        },
+      ],
       icon: 'chrome',
     },
     {
       name: 'IDE/Editor Plugin',
-      items: [],
+      items: [
+        {
+          name: 'ESDoc mdn',
+          description:
+            'See documentation of any javascript api from mozilla on your visual studio code side by side',
+          url: 'https://marketplace.visualstudio.com/items?itemName=samundrak.esdoc-mdn',
+        },
+      ],
       icon: 'code',
     },
     {
       name: 'Social media application and Bots',
-      items: [],
+      items: [
+        {
+          name: 'Facebook Application Development Kit',
+          description:
+            'A Facebook Application Development Kit .. Facebook Application Development kit (FADkit) is a Facebook apps management script where you can manage many Facebook app types from a single installation. Though it is good to make a single app for particular installation.',
+          url: 'https://github.com/samundrak/Facebook-Application-Development-Kit',
+        },
+      ],
       icon: 'facebook',
     },
   ],
