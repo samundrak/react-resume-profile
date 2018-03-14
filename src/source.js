@@ -295,6 +295,12 @@ export default {
             'A Facebook Application Development Kit .. Facebook Application Development kit (FADkit) is a Facebook apps management script where you can manage many Facebook app types from a single installation. Though it is good to make a single app for particular installation.',
           url: 'https://github.com/samundrak/Facebook-Application-Development-Kit',
         },
+        {
+          name: 'Periscope Live streamer',
+          description:
+            "Twitter's Periscope live video streaming.. it catche the recent tweet of owner broadcasted from periscope and then stream the video in their website",
+          url: 'https://github.com/samundrak/periscope-livestream-mobile-to-web',
+        },
       ],
       icon: 'facebook',
     },
