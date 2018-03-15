@@ -14,7 +14,11 @@ class Github extends React.Component {
   }
   async componentDidMount() {
     this.setState({ loading: true });
-    const profile = await axios.get(`https://api.github.com/users/${this.props.username}`);
+   const profile = await axios.get(`https://api.github.com/users/${this.props.username}`, {
+      headers: {
+        Authorization: 'Bearer 9fc14bba3fd3a8c7ec292e2f5562ba51add88733',
+      },
+    });
     this.setState({ ...profile.data, loading: false });
   }
   render() {
