@@ -2,26 +2,35 @@
 import React, { Fragment } from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import { Card, Icon, Avatar } from 'antd';
+import { Card, Avatar } from 'antd';
 
 const { Meta } = Card;
 class Github extends React.Component {
   constructor() {
     super();
     this.state = {
+      error: false,
       loading: false,
     };
   }
   async componentDidMount() {
     this.setState({ loading: true });
-   const profile = await axios.get(`https://api.github.com/users/${this.props.username}`, {
-      headers: {
-        Authorization: 'Bearer 9fc14bba3fd3a8c7ec292e2f5562ba51add88733',
-      },
-    });
-    this.setState({ ...profile.data, loading: false });
+    try {
+      const profile = await axios.get(`https://api.github.com/users/${this.props.username}`, {});
+      this.setState({ ...profile.data, loading: false });
+    } catch (err) {
+      this.setState({ error: true, loading: false });
+    }
   }
   render() {
+    if (this.state.error) {
+      return (
+        <p>
+          Seems github limit exceeded, here is my github link{' '}
+          <a href={`https://github.com/${this.props.username}`}>{this.props.username}</a>
+        </p>
+      );
+    }
     return (
       <Card
         style={{ width: 300 }}
