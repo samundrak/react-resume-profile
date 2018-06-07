@@ -38,25 +38,11 @@ export default {
             rate: 7,
           },
           {
-            language: 'java',
-            years: 1,
-            rate: 3,
-          },
-          {
-            language: 'php',
-            years: 1,
-            rate: 3,
-          },
-          {
             language: 'html',
             years: 3,
             rate: 5,
           },
-          {
-            language: 'laravel',
-            years: 0.6,
-            rate: 2,
-          },
+          
           {
             language: 'vue',
             years: 1.5,
