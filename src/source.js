@@ -1,5 +1,5 @@
 export default {
-  title: 'Samundra Khatri',
+  title: 'Samundra khatri | Javascript Developer | ReactJS Developer | Javascript Developer Nepal',
   social: {
     linkedIn: {
       username: 'samundrak',
