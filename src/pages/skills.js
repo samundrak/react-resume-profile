@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import { Collapse } from 'antd';
-import PropTypes from 'prop-types';
 import SkillCom from '../components/tabs/Skills';
 import App from '../App';
 
@@ -18,8 +17,6 @@ class Skills extends React.Component {
     this.state = {};
   }
   render() {
-    const { home } = this.context.source;
-    if (!home) return <Fragment>Loading</Fragment>;
     return (
       <App>
         {({ home }) => (
@@ -36,7 +33,4 @@ class Skills extends React.Component {
   }
 }
 
-Skills.contextTypes = {
-  source: PropTypes.object, // eslint-disable-line
-};
 export default Skills;
