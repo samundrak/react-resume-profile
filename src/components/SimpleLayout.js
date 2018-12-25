@@ -40,6 +40,9 @@ const SimpleLayout = ({ source, children }) => (
               <a href={menu.route}>{menu.name}</a>
             </Menu.Item>
           ))}
+        <Menu.Item key="notes">
+          <a href="https://notes.samundrakc.com.np">Notes</a>
+        </Menu.Item>
       </Menu>
     </Header>
     <Content style={{ padding: '0 50px' }}>

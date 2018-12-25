@@ -7,8 +7,14 @@ export default ({ items: skills = [] } = {}) => (
     {sortBy(skills, 'years').map((skill, index) => (
       <span style={{ margin: '2px' }} key={index}>
         {skill.language ? (
-          <a href={`https://google.com/search?q=${skill.language}`} target="_blank" rel="noopener">
-            <Tooltip title={`${skill.years} year(s) expeirence with ${skill.language}`}>
+          <a
+            href={`https://google.com/search?q=${skill.language}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Tooltip
+              title={`${skill.years} year(s) expeirence with ${skill.language}`}
+            >
               <Tag style={{ marginBottom: '5px' }}>
                 <i className={`devicon-${skill.language}-plain colored`} />{' '}
                 {skill.language.toUpperCase()}
@@ -16,10 +22,15 @@ export default ({ items: skills = [] } = {}) => (
             </Tooltip>
           </a>
         ) : (
-          <a href={`https://google.com/search?q=${skill}`} target="_blank" rel="noopener">
+          <a
+            href={`https://google.com/search?q=${skill}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Tooltip title="I know it">
               <Tag style={{ marginBottom: '5px' }}>
-                <i className={`devicon-${skill}-plain colored`} /> {skill.toUpperCase()}
+                <i className={`devicon-${skill}-plain colored`} />{' '}
+                {skill.toUpperCase()}
               </Tag>
             </Tooltip>
           </a>

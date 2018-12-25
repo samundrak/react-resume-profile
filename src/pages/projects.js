@@ -36,7 +36,11 @@ class Projects extends React.Component {
                       <List.Item>
                         <List.Item.Meta
                           title={
-                            <a target="_blank" rel="noopener" href={item.url}>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={item.url}
+                            >
                               {item.name}
                             </a>
                           }

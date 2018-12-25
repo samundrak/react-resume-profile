@@ -51,10 +51,10 @@ class Experience extends React.Component {
                     <Panel header="Stacks" key="stacks">
                       {item.stacks.map((stack) => (
                         <a
+                          rel="noopener noreferrer"
                           key={stack}
                           href={`https://www.google.com/search?q=${stack}`}
                           target="_blank"
-                          rel="noopener"
                         >
                           <Tag>
                             <i className={`devicon-${stack}-plain colored`} />

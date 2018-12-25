@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Collapse } from 'antd';
 import SkillCom from '../components/tabs/Skills';
 import App from '../App';

@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import cv from '../../samundra-khatri.pdf';
 
 export default () => (
-  <a href={cv} target="_blank" rel="noopener">
+  <a href={cv} target="_blank" rel="noopener noreferrer">
     <Button type="primary" icon="download" size="default">
       Download
     </Button>

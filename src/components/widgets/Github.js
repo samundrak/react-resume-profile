@@ -16,7 +16,10 @@ class Github extends React.Component {
   async componentDidMount() {
     this.setState({ loading: true });
     try {
-      const profile = await axios.get(`https://api.github.com/users/${this.props.username}`, {});
+      const profile = await axios.get(
+        `https://api.github.com/users/${this.props.username}`,
+        {}
+      );
       this.setState({ ...profile.data, loading: false });
     } catch (err) {
       this.setState({ error: true, loading: false });
@@ -27,7 +30,9 @@ class Github extends React.Component {
       return (
         <p>
           Seems github limit exceeded, here is my github link{' '}
-          <a href={`https://github.com/${this.props.username}`}>{this.props.username}</a>
+          <a href={`https://github.com/${this.props.username}`}>
+            {this.props.username}
+          </a>
         </p>
       );
     }
@@ -56,7 +61,11 @@ class Github extends React.Component {
         <Meta
           avatar={<Avatar src={this.state.avatar_url} />}
           title={
-            <a target="_blank" rel="noopener" href={this.state.html_url}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={this.state.html_url}
+            >
               {this.state.name} on Github
             </a>
           }

@@ -1,4 +1,4 @@
-import React, { Component, Children } from 'react';
+import React, { Component } from 'react';
 import PropsTypes from 'prop-types';
 import dataSource from './source';
 import SimpleLayout from './components/SimpleLayout';
