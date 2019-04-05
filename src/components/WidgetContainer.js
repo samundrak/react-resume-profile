@@ -16,10 +16,10 @@ const StyledTitle = styled.div`
   text-align: center;
   font-size: 1.2em;
 `;
-const WidgetContainer = ({ title, children }) => (
+const WidgetContainer = ({ title, children, style }) => (
   <ProjectContainer>
     <StyledTitle>{title}</StyledTitle>
-    <div>{children}</div>
+    <div style={style}>{children}</div>
   </ProjectContainer>
 );
 

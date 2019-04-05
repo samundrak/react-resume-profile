@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const LinkedIn = ({ username, title }) => (
   <div
-    style={{ width: '100%', padding: '5%' }}
     className="LI-profile-badge"
     data-version="v1"
     data-size="medium"
@@ -12,7 +11,7 @@ const LinkedIn = ({ username, title }) => (
     data-theme="light"
     data-vanity={username}
   >
-    <a className="LI-simple-link" href={`https://np.linkedin.com/in/${username}`}>
+    <a className="LI-simple-link" href={`https://np.linkedin.com/in/${username}?trk=profile-badge`}>
       {title}
     </a>
   </div>

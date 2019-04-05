@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import dataSource from './source';
 import SimpleLayout from './components/SimpleLayout';
 import Routes from './Routes';
+import SourceContext from './contexts/source';
 import './App.css';
 
 class App extends Component {
@@ -14,15 +15,13 @@ class App extends Component {
     };
   }
   getChildContext() {
-    return { source: this.state.source };
+    return { source: dataSource };
   }
   render() {
     return (
-      <Router>
-        <SimpleLayout source={this.state.source}>
-          <Routes pages={this.state.pages} />
-        </SimpleLayout>
-      </Router>
+      <SourceContext.Provider value={dataSource}>
+        <SimpleLayout source={dataSource}>{this.props.children(dataSource)}</SimpleLayout>
+      </SourceContext.Provider>
     );
   }
 }

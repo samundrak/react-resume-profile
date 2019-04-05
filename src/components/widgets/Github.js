@@ -33,6 +33,7 @@ class Github extends React.Component {
     }
     return (
       <Card
+        style={{ width: 300 }}
         loading={this.state.loading}
         actions={[
           <Fragment>
@@ -55,7 +56,7 @@ class Github extends React.Component {
         <Meta
           avatar={<Avatar src={this.state.avatar_url} />}
           title={
-            <a target="_blank" rel="noopener" href={this.state.html_url}>
+            <a target="_blank" rel="noopener noreferrer" href={this.state.html_url}>
               {this.state.name} on Github
             </a>
           }

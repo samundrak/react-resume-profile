@@ -167,9 +167,16 @@ export default {
           role: 'Frontend/Backend Developer',
         },
         {
-          name: 'Simple Forum',
-          description: 'A simple forum app made with Nodejs, ExpressJs, NextJs, ReactJs, AntDesign',
-          url: 'https://github.com/samundrak/simple-forum',
+          name: 'BhittePatro',
+          description:
+            'BhittePatro is a calendar for Nepali Date inspired from Google Calendar excluding Week/Day view, Event Management. BhittePatro will be offline first app so that we can view calendar offline anytime and soon to be PWA.',
+          url: 'https://bhittepatro.com',
+        },
+        {
+          name: 'Bhadadar',
+          description:
+            'Bhadadar is an app where user can see the bus fair of route which was approved by government.',
+          url: 'http://bhadadar.netlify.com',
         },
       ],
       icon: 'global',

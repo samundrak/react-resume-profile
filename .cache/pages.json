@@ -1,0 +1,27 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-experience-js",
+        "jsonName": "experience-6a7",
+        "path": "/experience/"
+    },
+    {
+        "componentChunkName": "component---src-pages-projects-js",
+        "jsonName": "projects-9e9",
+        "path": "/projects/"
+    },
+    {
+        "componentChunkName": "component---src-pages-skills-js",
+        "jsonName": "skills-bfb",
+        "path": "/skills/"
+    }
+]

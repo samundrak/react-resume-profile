@@ -1,11 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Layout, Row, Col, Menu } from 'antd';
-import { Link } from 'react-router-dom';
+import { Layout, Row, Col, Menu, Avatar } from 'antd';
 import PropTypes from 'prop-types';
+import MyPhoto from '../me.png';
 import routeComponentMap from '../routeComponentMap';
 import SocialIcons from './SocialIcons';
-import Projects from '../pages/Projects';
 import WidgetContainer from '../components/WidgetContainer';
 
 const { Header, Content, Footer } = Layout;
@@ -38,9 +37,12 @@ const SimpleLayout = ({ source, children }) => (
           .filter(menu => menu.inMenu)
           .map(menu => (
             <Menu.Item key={menu.name}>
-              <Link to={menu.route}>{menu.name}</Link>
+              <a href={menu.route}>{menu.name}</a>
             </Menu.Item>
           ))}
+        <Menu.Item key="notes">
+          <a href="https://notes.samundrakc.com.np">Notes</a>
+        </Menu.Item>
       </Menu>
     </Header>
     <Content>
@@ -48,8 +50,11 @@ const SimpleLayout = ({ source, children }) => (
       <div style={{ background: '#fff', paddingLeft: '1%', minHeight: 280 }}>
         <Row>
           <Col md={6}>
-            <WidgetContainer title="Projects">
-              <Projects />
+            <WidgetContainer
+              title="I look like this"
+              style={{ justifyContent: 'center', display: 'flex' }}
+            >
+              <img src={MyPhoto} alt="samundra khatri" style={{ flex: 1, padding: '2%' }} />
             </WidgetContainer>
           </Col>
           <Col sm={24} md={12}>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import { Card } from 'antd';
 import styled from 'styled-components';
 import { getFullURLfromUsername } from '../utils';
 
@@ -13,8 +12,8 @@ const Item = styled.div`
 `;
 const SocialIcons = ({ social }) => (
   <Container>
-    {Object.keys(social).map(item => (
-      <Item>
+    {Object.keys(social).map((item, index) => (
+      <Item key={index}>
         <SocialIcon url={getFullURLfromUsername(item, social[item].username)} />
       </Item>
     ))}

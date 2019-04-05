@@ -1,7 +1,7 @@
-import Home from './pages/Home';
-import Skills from './pages/Skills';
-import Experience from './pages/Experience';
-import Projects from './pages/Projects';
+import Home from './pages/index';
+import Skills from './pages/skills';
+import Experience from './pages/experience';
+import Projects from './pages/projects';
 
 export default [
   {

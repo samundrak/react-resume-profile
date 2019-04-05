@@ -24,6 +24,5 @@ export function getFullURLfromUsername(social, username) {
     twitter: `twitter.com/${username}`,
     github: `github.com/${username}`,
   };
-  console.log(social, username);
   return `${protocolWithTLD}${links[social]}`;
 }
