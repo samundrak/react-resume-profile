@@ -1,19 +1,23 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { Card } from 'antd';
+import styled from 'styled-components';
 import { getFullURLfromUsername } from '../utils';
-import WidgetContainer from './WidgetContainer';
 
-const { Meta } = Card;
-
+const Container = styled.div`
+  display: flex;
+`;
+const Item = styled.div`
+  padding: 1%;
+  flex: 1;
+`;
 const SocialIcons = ({ social }) => (
-  <WidgetContainer title="Coding,Ranting and Sharing here">
-    {' '}
-    <Card
-      actions={Object.keys(social).map(item => (
+  <Container>
+    {Object.keys(social).map(item => (
+      <Item>
         <SocialIcon url={getFullURLfromUsername(item, social[item].username)} />
-      ))}
-    />
-  </WidgetContainer>
+      </Item>
+    ))}
+  </Container>
 );
 export default SocialIcons;

@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import routeComponentMap from '../routeComponentMap';
 import SocialIcons from './SocialIcons';
 import Projects from '../pages/Projects';
+import WidgetContainer from '../components/WidgetContainer';
 
 const { Header, Content, Footer } = Layout;
 
@@ -47,13 +48,17 @@ const SimpleLayout = ({ source, children }) => (
       <div style={{ background: '#fff', paddingLeft: '1%', minHeight: 280 }}>
         <Row>
           <Col md={6}>
-            <Projects />
+            <WidgetContainer title="Projects">
+              <Projects />
+            </WidgetContainer>
           </Col>
           <Col sm={24} md={12}>
             {children}
           </Col>
           <Col sm={24} md={6}>
-            <SocialIcons social={source.social} />
+            <WidgetContainer title="Coding,Ranting and Sharing here">
+              <SocialIcons social={source.social} />
+            </WidgetContainer>
           </Col>
         </Row>
       </div>

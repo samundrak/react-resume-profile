@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const ProjectContainer = styled.div`
-  border-style: solid;
   border-bottom-radius: 1px;
   border-bottom-right-radius: 2%;
   border-bottom-left-radius: 2%;
@@ -13,7 +12,7 @@ const StyledTitle = styled.div`
   font-weight: bold;
   color: white;
   width: 100%;
-  background-color: #e25252;
+  background-color: #635f5f;
   text-align: center;
   font-size: 1.2em;
 `;
