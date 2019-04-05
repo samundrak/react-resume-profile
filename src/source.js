@@ -1,3 +1,9 @@
+import agentcis from './images/agentcis.png';
+import savetodrive from './images/savetodrive.png';
+import PFConcept from './images/pfconcept.png';
+import BhittePatro from './images/bhittepatro.png';
+import bhadadar from './images/bhadadar.png';
+
 export default {
   title: 'Samundra khatri | Javascript Developer | ReactJS Developer | Javascript Developer Nepal',
   social: {
@@ -154,29 +160,34 @@ export default {
           url: 'https://agentcis.com',
           description: 'Client relation manager, invoice trackings',
           role: 'Frontend Developer',
+          img: agentcis,
         },
         {
-          name: 'vDiscover',
-          description: 'School management System',
+          name: 'PFConcept',
+          description: 'Visualizer for editing products and logo placements.',
           role: 'Frontend/Backend Developer',
+          img: PFConcept,
         },
         {
           name: 'Savetodrive',
           url: 'https://savetodrive.net',
           description: 'Save web files to your cloud drives.',
           role: 'Frontend/Backend Developer',
+          img: savetodrive,
         },
         {
           name: 'BhittePatro',
           description:
             'BhittePatro is a calendar for Nepali Date inspired from Google Calendar excluding Week/Day view, Event Management. BhittePatro will be offline first app so that we can view calendar offline anytime and soon to be PWA.',
           url: 'https://bhittepatro.com',
+          img: BhittePatro,
         },
         {
           name: 'Bhadadar',
           description:
             'Bhadadar is an app where user can see the bus fair of route which was approved by government.',
           url: 'http://bhadadar.netlify.com',
+          img: bhadadar,
         },
       ],
       icon: 'global',

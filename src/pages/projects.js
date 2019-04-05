@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Collapse, List, Popover } from 'antd';
+import { Collapse, List, Avatar, Popover } from 'antd';
 import PropTypes from 'prop-types';
 import { limitString } from '../utils';
 import InfoIcon from '../components/InfoIcon';
@@ -29,10 +29,13 @@ class Projects extends React.Component {
                   key={project.name}
                 >
                   <List
-                    itemLayout="horizontal"
+                    itemLayout="vertical"
+                    size="small"
                     dataSource={project.items}
                     renderItem={item => (
-                      <List.Item>
+                      <List.Item
+                        extra={item.img ? <img width={272} alt="logo" src={item.img} /> : ''}
+                      >
                         <List.Item.Meta
                           title={
                             <a target="_blank" rel="noopener noreferrer" href={item.url}>
@@ -40,16 +43,14 @@ class Projects extends React.Component {
                             </a>
                           }
                           description={
-                            <Popover content={item.description} overlayStyle={{ width: '350px' }}>
-                              {limitString(item.description, 100)}
-                            </Popover>
+                            <div title="My role on this project">
+                              <i> {item.role ? item.role : 'Author'}</i>
+                            </div>
                           }
                         />
-                        <div title="My role on this project">
-                          <b>
-                            <i> {item.role ? item.role : 'Author'}</i>
-                          </b>
-                        </div>
+                        <Popover content={item.description} overlayStyle={{ width: '350px' }}>
+                          {limitString(item.description, 150)}
+                        </Popover>
                       </List.Item>
                     )}
                   />
