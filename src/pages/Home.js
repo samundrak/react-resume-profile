@@ -16,7 +16,11 @@ class Home extends React.Component {
   render() {
     const { home } = this.context.source;
     return (
-      <Collapse style={{ width: '100%' }} bordered={false} defaultActiveKey={['About Me']}>
+      <Collapse
+        style={{ width: '100%' }}
+        bordered={false}
+        defaultActiveKey={['About Me', 'Skills', 'Experience']}
+      >
         {home
           ? mappedComps.map(item => (
             <Panel

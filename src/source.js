@@ -1,13 +1,13 @@
 export default {
   title: 'Samundra khatri | Javascript Developer | ReactJS Developer | Javascript Developer Nepal',
   social: {
-    linkedIn: {
+    github: {
       username: 'samundrak',
     },
     twitter: {
       username: 'kardnumas',
     },
-    github: {
+    linkedIn: {
       username: 'samundrak',
     },
   },
@@ -21,7 +21,7 @@ export default {
                 comfortable in one language, I also like to explore new languages. I also like indulging my time with
                 my pet projects and participating in hackathons also i like to stay updated with the latest
                 technologies.
-                <br/>
+                ---
                 As a self learner, I started programming from mid of 2012, started from PHP and then HTML, CSS, Javascript.
                 Learned it for a whole day of 2013 and then I started learning android and java from 2014-2015.In between this years, 
                 i also learned database, networking and built projects like a clone of google adsense and google analytics,
@@ -40,21 +40,12 @@ export default {
         items: [
           {
             language: 'javascript',
-            years: 3,
+            years: 5,
             rate: 7,
           },
-          {
-            language: 'html',
-            years: 3,
-            rate: 5,
-          },
-
-          {
-            language: 'vue',
-            years: 1.5,
-            rate: 6,
-          },
-          { language: 'react', years: 2, rate: 6 },
+          { language: 'react', years: 4, rate: 8 },
+          'vue',
+          'html',
           'jquery',
           'bootstrap',
           'html',

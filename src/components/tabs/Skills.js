@@ -4,7 +4,7 @@ import { Tag, Tooltip } from 'antd';
 
 export default ({ items: skills = [] } = {}) => (
   <React.Fragment>
-    {sortBy(skills, 'years').map((skill, index) => (
+    {sortBy(skills, 'rate').map((skill, index) => (
       <span style={{ margin: '2px' }} key={index}>
         {skill.language ? (
           <a href={`https://google.com/search?q=${skill.language}`} target="_blank" rel="noopener">

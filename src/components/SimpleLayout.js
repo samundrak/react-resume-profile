@@ -3,11 +3,9 @@ import { Helmet } from 'react-helmet';
 import { Layout, Row, Col, Menu } from 'antd';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import LinkedIn from './widgets/LinkedIn';
-import Twitter from './widgets/Twitter';
-import Github from './widgets/Github';
 import routeComponentMap from '../routeComponentMap';
 import SocialIcons from './SocialIcons';
+import Projects from '../pages/Projects';
 
 const { Header, Content, Footer } = Layout;
 
@@ -44,15 +42,18 @@ const SimpleLayout = ({ source, children }) => (
           ))}
       </Menu>
     </Header>
-    <Content style={{ padding: '1%' }}>
+    <Content>
       <br />
       <div style={{ background: '#fff', paddingLeft: '1%', minHeight: 280 }}>
         <Row>
-          <Col sm={24} md={18}>
+          <Col md={6}>
+            <Projects />
+          </Col>
+          <Col sm={24} md={12}>
             {children}
           </Col>
           <Col sm={24} md={6}>
-            <SocialIcons social={source.social}/>
+            <SocialIcons social={source.social} />
           </Col>
         </Row>
       </div>

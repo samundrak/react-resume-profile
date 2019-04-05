@@ -20,9 +20,10 @@ export function limitString(string, limit = 50) {
 export function getFullURLfromUsername(social, username) {
   const protocolWithTLD = 'https://www.';
   const links = {
-    linkedin: `linkedin.com/in/${username}`,
+    linkedIn: `linkedin.com/in/${username}`,
     twitter: `twitter.com/${username}`,
     github: `github.com/${username}`,
   };
-  return `${protocolWithTLD}${links[username]}`;
+  console.log(social, username);
+  return `${protocolWithTLD}${links[social]}`;
 }

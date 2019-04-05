@@ -3,6 +3,7 @@ import { Collapse, List, Popover } from 'antd';
 import PropTypes from 'prop-types';
 import { limitString } from '../utils';
 import InfoIcon from '../components/InfoIcon';
+import WidgetContainer from '../components/WidgetContainer';
 
 const { Panel } = Collapse;
 
@@ -15,8 +16,7 @@ class Projects extends React.Component {
     const { projects } = this.context.source;
     if (!projects) return <Fragment>Loading</Fragment>;
     return (
-      <Fragment>
-        <h3>Projects i have been part of.</h3>
+      <WidgetContainer title="Projects">
         <Collapse bordered={false} defaultActiveKey={['Familiar']}>
           {projects.map(project => (
             <Panel
@@ -53,7 +53,7 @@ class Projects extends React.Component {
             </Panel>
           ))}
         </Collapse>
-      </Fragment>
+      </WidgetContainer>
     );
   }
 }

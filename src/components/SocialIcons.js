@@ -1,16 +1,19 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { Card } from 'antd';
 import { getFullURLfromUsername } from '../utils';
+import WidgetContainer from './WidgetContainer';
 
 const { Meta } = Card;
 
 const SocialIcons = ({ social }) => (
-  <div>
+  <WidgetContainer title="Coding,Ranting and Sharing here">
     {' '}
-    <Card actions={Object.keys(social).map(item => getFullURLfromUsername(item, social[item]))}>
-      <Meta title="Find me socially" />
-    </Card>
-  </div>
+    <Card
+      actions={Object.keys(social).map(item => (
+        <SocialIcon url={getFullURLfromUsername(item, social[item].username)} />
+      ))}
+    />
+  </WidgetContainer>
 );
 export default SocialIcons;
