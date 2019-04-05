@@ -16,7 +16,7 @@ class Home extends React.Component {
   render() {
     const { home } = this.context.source;
     return (
-      <Collapse bordered={false} defaultActiveKey={['About Me']}>
+      <Collapse style={{ width: '100%' }} bordered={false} defaultActiveKey={['About Me']}>
         {home
           ? mappedComps.map(item => (
             <Panel
@@ -25,7 +25,7 @@ class Home extends React.Component {
             >
               {item.component(home.tabs[camelCase(item.header)])}
             </Panel>
-          ))
+            ))
           : ''}
       </Collapse>
     );

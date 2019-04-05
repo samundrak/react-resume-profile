@@ -7,6 +7,7 @@ import LinkedIn from './widgets/LinkedIn';
 import Twitter from './widgets/Twitter';
 import Github from './widgets/Github';
 import routeComponentMap from '../routeComponentMap';
+import SocialIcons from './SocialIcons';
 
 const { Header, Content, Footer } = Layout;
 
@@ -34,26 +35,24 @@ const SimpleLayout = ({ source, children }) => (
         defaultSelectedKeys={['2']}
         style={{ lineHeight: '64px' }}
       >
-        {routeComponentMap.filter(menu => menu.inMenu).map(menu => (
-          <Menu.Item key={menu.name}>
-            <Link to={menu.route}>{menu.name}</Link>
-          </Menu.Item>
-        ))}
+        {routeComponentMap
+          .filter(menu => menu.inMenu)
+          .map(menu => (
+            <Menu.Item key={menu.name}>
+              <Link to={menu.route}>{menu.name}</Link>
+            </Menu.Item>
+          ))}
       </Menu>
     </Header>
-    <Content style={{ padding: '0 50px' }}>
+    <Content style={{ padding: '1%' }}>
       <br />
-      <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+      <div style={{ background: '#fff', paddingLeft: '1%', minHeight: 280 }}>
         <Row>
-          <Col span={6}>
-            {source.social.linkedIn && (
-              <LinkedIn username={source.social.linkedIn.username} title={source.title} />
-            )}
+          <Col sm={24} md={18}>
+            {children}
           </Col>
-          <Col span={12}>{children}</Col>
-          <Col span={6}>
-            {source.social.github && <Github username={source.social.github.username} />}
-            {source.social.twitter && <Twitter username={source.social.twitter.username} />}
+          <Col sm={24} md={6}>
+            <SocialIcons social={source.social}/>
           </Col>
         </Row>
       </div>
