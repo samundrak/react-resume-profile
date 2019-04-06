@@ -1,12 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Layout, Row, Col, Menu, Avatar } from 'antd';
+import { Layout, Row, Col, Menu, Avatar, Card } from 'antd';
 import PropTypes from 'prop-types';
 import MyPhoto from '../me.png';
 import routeComponentMap from '../routeComponentMap';
 import SocialIcons from './SocialIcons';
 import WidgetContainer from '../components/WidgetContainer';
 
+const { Meta } = Card;
 const { Header, Content, Footer } = Layout;
 
 const SimpleLayout = ({ source, children }) => (
@@ -50,11 +51,15 @@ const SimpleLayout = ({ source, children }) => (
       <div style={{ background: '#fff', paddingLeft: '1%', minHeight: 280 }}>
         <Row>
           <Col md={6}>
-            <WidgetContainer
-              title="I look like this"
-              style={{ justifyContent: 'center', display: 'flex' }}
-            >
-              <img src={MyPhoto} alt="samundra khatri" style={{ flex: 1, padding: '2%' }} />
+            <WidgetContainer style={{ justifyContent: 'center', display: 'flex' }}>
+              <Card style={{ marginTop: 5 }}>
+                <Meta
+                  avatar={<Avatar src={MyPhoto} size="large" />}
+                  title={source.name}
+                  description={`${source.email} - ${source.address}`}
+                />
+                {source.bio}
+              </Card>
             </WidgetContainer>
           </Col>
           <Col sm={24} md={12}>

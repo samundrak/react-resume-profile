@@ -21,7 +21,7 @@ var _emitter = _interopRequireDefault(require("./emitter"));
 
 var _router = require("@reach/router");
 
-var _parsePath2 = _interopRequireDefault(require("./parse-path"));
+var _gatsbyLink = require("gatsby-link");
 
 // Convert to a map for faster lookup in maybeRedirect()
 const redirectMap = _redirects.default.reduce((map, redirect) => {
@@ -49,18 +49,20 @@ function maybeRedirect(pathname) {
   }
 }
 
-const onPreRouteUpdate = location => {
+const onPreRouteUpdate = (location, prevLocation) => {
   if (!maybeRedirect(location.pathname)) {
     (0, _apiRunnerBrowser.apiRunner)(`onPreRouteUpdate`, {
-      location
+      location,
+      prevLocation
     });
   }
 };
 
-const onRouteUpdate = location => {
+const onRouteUpdate = (location, prevLocation) => {
   if (!maybeRedirect(location.pathname)) {
     (0, _apiRunnerBrowser.apiRunner)(`onRouteUpdate`, {
-      location
+      location,
+      prevLocation
     }); // Temp hack while awaiting https://github.com/reach/router/issues/119
 
     window.__navigatingToLink = false;
@@ -73,7 +75,7 @@ const navigate = (to, options = {}) => {
     window.__navigatingToLink = true;
   }
 
-  let _parsePath = (0, _parsePath2.default)(to),
+  let _parsePath = (0, _gatsbyLink.parsePath)(to),
       pathname = _parsePath.pathname;
 
   const redirect = redirectMap[pathname]; // If we're redirecting, just replace the passed in pathname
@@ -81,16 +83,12 @@ const navigate = (to, options = {}) => {
 
   if (redirect) {
     to = redirect.toPath;
-    pathname = (0, _parsePath2.default)(to).pathname;
+    pathname = (0, _gatsbyLink.parsePath)(to).pathname;
   } // If we had a service worker update, no matter the path, reload window and
   // reset the pathname whitelist
 
 
-  if (window.GATSBY_SW_UPDATED) {
-    const controller = navigator.serviceWorker.controller;
-    controller.postMessage({
-      gatsbyApi: `resetWhitelist`
-    });
+  if (window.___swUpdated) {
     window.location = pathname;
     return;
   } // Start a timer to wait for a second before transitioning and showing a
@@ -168,22 +166,22 @@ function init() {
 class RouteUpdates extends _react.default.Component {
   constructor(props) {
     super(props);
-    onPreRouteUpdate(props.location);
+    onPreRouteUpdate(props.location, null);
   }
 
   componentDidMount() {
-    onRouteUpdate(this.props.location);
+    onRouteUpdate(this.props.location, null);
   }
 
   componentDidUpdate(prevProps, prevState, shouldFireRouteUpdate) {
     if (shouldFireRouteUpdate) {
-      onRouteUpdate(this.props.location);
+      onRouteUpdate(this.props.location, prevProps.location);
     }
   }
 
   getSnapshotBeforeUpdate(prevProps) {
     if (this.props.location.pathname !== prevProps.location.pathname) {
-      onPreRouteUpdate(this.props.location);
+      onPreRouteUpdate(this.props.location, prevProps.location);
       return true;
     }
 

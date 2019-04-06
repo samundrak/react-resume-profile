@@ -5,7 +5,12 @@ import BhittePatro from './images/bhittepatro.png';
 import bhadadar from './images/bhadadar.png';
 
 export default {
+  name: 'Samundra Khatri',
+  address: 'Kathmandu, Nepal',
+  bio:
+    'Passionate Pragmatic Developer, who loves JavaScript, Frontend and also does backend if it is NodeJS. Loves Software principles, Software Architecture, Design Systems, OOP, System Design, Design Patterns, Web Optimizations',
   title: 'Samundra khatri | Javascript Developer | ReactJS Developer | Javascript Developer Nepal',
+  email: ['samundrak@yahoo.com'],
   social: {
     github: {
       username: 'samundrak',
@@ -50,6 +55,10 @@ export default {
             rate: 7,
           },
           { language: 'react', years: 4, rate: 8 },
+          'Code architect',
+          'Principles',
+          'Web Optimizations',
+          'Single Page Apps',
           'vue',
           'html',
           'jquery',

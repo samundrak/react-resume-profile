@@ -10,9 +10,7 @@ const ProjectContainer = styled.div`
 const StyledTitle = styled.div`
   font-style: italic;
   font-weight: bold;
-  color: white;
   width: 100%;
-  background-color: #635f5f;
   text-align: center;
   font-size: 1.2em;
 `;

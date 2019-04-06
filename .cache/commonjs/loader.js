@@ -3,7 +3,7 @@
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
 exports.__esModule = true;
-exports.default = exports.publicLoader = exports.setApiRunnerForLoader = void 0;
+exports.default = exports.publicLoader = exports.setApiRunnerForLoader = exports.postInitialRenderWork = void 0;
 
 var _findPage = _interopRequireDefault(require("./find-page"));
 
@@ -22,6 +22,13 @@ let jsonDataPaths = {};
 let fetchHistory = [];
 let fetchingPageResourceMapPromise = null;
 let fetchedPageResourceMap = false;
+/**
+ * Indicate if pages manifest is loaded
+ *  - in production it is split to separate "pages-manifest" chunk that need to be lazy loaded,
+ *  - in development it is part of single "common" chunk and is available from the start.
+ */
+
+let hasPageResourceMap = process.env.NODE_ENV !== `production`;
 let apiRunner;
 const failedPaths = {};
 const MAX_HISTORY = 5;
@@ -49,6 +56,15 @@ const fetchPageResourceMap = () => {
         window.___dataPaths = dataPaths;
         queue.addPagesArray(pages);
         queue.addDataPaths(dataPaths);
+        hasPageResourceMap = true;
+        resolve(fetchedPageResourceMap = true);
+      }).catch(e => {
+        console.warn(`Failed to fetch pages manifest. Gatsby will reload on next navigation.`); // failed to grab pages metadata
+        // for now let's just resolve this - on navigation this will cause missing resources
+        // and will trigger page reload and then it will retry
+        // this can happen with service worker updates when webpack manifest points to old
+        // chunk that no longer exists on server
+
         resolve(fetchedPageResourceMap = true);
       });
     });
@@ -164,7 +180,19 @@ const onPostPrefetchPathname = pathname => {
     });
     prefetchCompleted[pathname] = true;
   }
-}; // Note we're not actively using the path data atm. There
+};
+/**
+ * Check if we should fallback to resources for 404 page if resources for a page are not found
+ *
+ * We can't do that when we don't have full pages manifest - we don't know if page exist or not if we don't have it.
+ * We also can't do that on initial render / mount in case we just can't load resources needed for first page.
+ * Not falling back to 404 resources will cause "EnsureResources" component to handle scenarios like this with
+ * potential reload
+ * @param {string} path Path to a page
+ */
+
+
+const shouldFallbackTo404Resources = path => (hasPageResourceMap || inInitialRender) && path !== `/404.html`; // Note we're not actively using the path data atm. There
 // could be future optimizations however around trying to ensure
 // we load all resources for likely-to-be-visited paths.
 // let pathArray = []
@@ -259,7 +287,7 @@ const queue = {
 
     if (page) {
       return pathScriptsCache[page.path];
-    } else if (path !== `/404.html`) {
+    } else if (shouldFallbackTo404Resources(path)) {
       return queue.getResourcesForPathnameSync(`/404.html`);
     } else {
       return null;
@@ -269,9 +297,7 @@ const queue = {
   // if necessary and then the code/data bundles. Used for prefetching
   // and getting resources for page changes.
   getResourcesForPathname: path => new Promise((resolve, reject) => {
-    const doingInitialRender = inInitialRender;
-    inInitialRender = false; // Production code path
-
+    // Production code path
     if (failedPaths[path]) {
       handleResourceLoadError(path, `Previously detected load failure for "${path}"`);
       reject();
@@ -289,9 +315,9 @@ const queue = {
     }
 
     if (!page) {
-      console.log(`A page wasn't found for "${path}"`); // Preload the custom 404 page
+      if (shouldFallbackTo404Resources(path)) {
+        console.log(`A page wasn't found for "${path}"`); // Preload the custom 404 page
 
-      if (path !== `/404.html`) {
         resolve(queue.getResourcesForPathname(`/404.html`));
         return;
       }
@@ -361,16 +387,22 @@ const queue = {
 
 
         onPostPrefetchPathname(path);
-
-        if (doingInitialRender) {
-          // We got all resources needed for first mount,
-          // we can fetch resoures for all pages.
-          fetchPageResourceMap();
-        }
       });
     }
   })
 };
+
+const postInitialRenderWork = () => {
+  inInitialRender = false;
+
+  if (process.env.NODE_ENV === `production`) {
+    // We got all resources needed for first mount,
+    // we can fetch resources for all pages.
+    fetchPageResourceMap();
+  }
+};
+
+exports.postInitialRenderWork = postInitialRenderWork;
 
 const setApiRunnerForLoader = runner => {
   apiRunner = runner;

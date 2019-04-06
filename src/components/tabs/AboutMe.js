@@ -1,4 +1,5 @@
 import React from 'react';
+import Paragraph from '../Paragraph';
 
 class AboutMe extends React.Component {
   constructor(props) {
@@ -15,18 +16,11 @@ class AboutMe extends React.Component {
   seeMoreMaker = (content) => {
     const breaker = content.split('---');
     if (breaker.length < 2) {
-      return (
-        <p>
-          <i dangerouslySetInnerHTML={{ __html: breaker[0] }} />
-        </p>
-      );
+      return <Paragraph content={breaker[0]} />;
     }
     return (
       <div>
-        <p>
-          <i dangerouslySetInnerHTML={{ __html: breaker[0] }} />
-        </p>
-
+        <Paragraph content={breaker[0]} />
         {!this.state.isSeeMore && (
           <a href="javascript:void(0)" onClick={this.handleSeeMore}>
             See litte more...
@@ -34,11 +28,7 @@ class AboutMe extends React.Component {
         )}
 
         {this.state.isSeeMore
-          ? breaker.slice(1).map((item, index) => (
-            <p key={index}>
-              <i dangerouslySetInnerHTML={{ __html: item }} />
-            </p>
-            ))
+          ? breaker.slice(1).map((item, index) => <Paragraph key={index} content={item} />)
           : ''}
         {this.state.isSeeMore && (
           <a href="javascript:void(0)" onClick={this.handleSeeMore}>

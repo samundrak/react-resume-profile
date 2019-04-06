@@ -4,24 +4,25 @@
       "jsonName": "dev-404-page-5f9",
       "internalComponentName": "ComponentDev404Page",
       "path": "/dev-404-page/",
-      "component": "/home/samundra/projects/react-resume-profile/.cache/dev-404-page.js",
+      "component": "/home/samundrak/projects/samundrakc.com.np/.cache/dev-404-page.js",
       "componentChunkName": "component---cache-dev-404-page-js",
+      "isCreatedByStatefulCreatePages": true,
       "context": {},
       "pluginCreator___NODE": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
       "pluginCreatorId": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
-      "componentPath": "/home/samundra/projects/react-resume-profile/.cache/dev-404-page.js",
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/.cache/dev-404-page.js",
       "id": "SitePage /dev-404-page/",
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5e1cfe7125cd698c1bd58a8c461bac2b",
+        "contentDigest": "92b58bf05b34123384d34b897e339a45",
         "description": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
         "owner": "internal-data-bridge"
       }
     },
     "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5": {
-      "resolve": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "resolve": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/dev-404-page",
       "id": "d48d1c52-fe48-53cb-8f08-aa4b47dde5a5",
       "name": "dev-404-page",
       "version": "1.0.0",
@@ -33,7 +34,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/dev-404-page",
       "packageJson": {
         "name": "dev-404-page",
         "description": "Internal plugin to add a 404 page in development with helpful information",
@@ -47,16 +48,16 @@
         "optionalDependecies": [],
         "bundledDependecies": []
       },
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "0c5f0315d25a0cf7243b2af1daffe94a",
+        "contentDigest": "ad087a627597912190f884e7b8ac6c98",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "1fc32581-893a-55e8-8927-bcd667e2b700": {
-      "resolve": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "resolve": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/load-babel-config",
       "id": "1fc32581-893a-55e8-8927-bcd667e2b700",
       "name": "load-babel-config",
       "version": "1.0.0",
@@ -68,7 +69,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/load-babel-config",
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/load-babel-config",
       "packageJson": {
         "name": "load-babel-config",
         "description": "Internal plugin that handles loading Babel configs",
@@ -82,16 +83,16 @@
         "optionalDependecies": [],
         "bundledDependecies": []
       },
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "5d6aff0abe5216f18926b4c3d3168558",
+        "contentDigest": "1bb8dc21483bcf6ec781f7364f61bca5",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "a5079d69-ba80-53dc-82f9-0f440bd5448c": {
-      "resolve": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "resolve": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
       "id": "a5079d69-ba80-53dc-82f9-0f440bd5448c",
       "name": "internal-data-bridge",
       "version": "1.0.0",
@@ -104,7 +105,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
       "packageJson": {
         "name": "internal-data-bridge",
         "description": "An internal Gatsby plugin which creates data nodes from internal data",
@@ -118,16 +119,16 @@
         "optionalDependecies": [],
         "bundledDependecies": []
       },
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "ad37e5b244507d13065a1538711b0019",
+        "contentDigest": "ff3e1b2c6fe11f936cd92c7a8fe01bb9",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "f795702c-a3b8-5a88-88ee-5d06019d44fa": {
-      "resolve": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "resolve": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/prod-404",
       "id": "f795702c-a3b8-5a88-88ee-5d06019d44fa",
       "name": "prod-404",
       "version": "1.0.0",
@@ -139,7 +140,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/prod-404",
       "packageJson": {
         "name": "prod-404",
         "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
@@ -153,51 +154,16 @@
         "optionalDependecies": [],
         "bundledDependecies": []
       },
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "232b3d686aeb59469531432fd6aca4f5",
-        "type": "SitePlugin",
-        "owner": "internal-data-bridge"
-      }
-    },
-    "84dad27f-1d44-51fc-ac56-4db2e5222995": {
-      "resolve": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/query-runner",
-      "id": "84dad27f-1d44-51fc-ac56-4db2e5222995",
-      "name": "query-runner",
-      "version": "1.0.0",
-      "pluginOptions": {
-        "plugins": []
-      },
-      "nodeAPIs": [
-        "onCreatePage"
-      ],
-      "browserAPIs": [],
-      "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/query-runner",
-      "packageJson": {
-        "name": "query-runner",
-        "description": "Internal plugin for running queries",
-        "version": "1.0.0",
-        "main": "index.js",
-        "author": "",
-        "license": "MIT",
-        "dependencies": [],
-        "devDependencies": [],
-        "peerDependencies": [],
-        "optionalDependecies": [],
-        "bundledDependecies": []
-      },
-      "parent": "SOURCE",
-      "children": [],
-      "internal": {
-        "contentDigest": "f9d1408c9a0426573805dbb5f93f7e8c",
+        "contentDigest": "0ffb0977676069cd10ff76d36d4f18c2",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "6f4b2fa9-66b5-5205-a03f-140005a2cfe5": {
-      "resolve": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
+      "resolve": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
       "id": "6f4b2fa9-66b5-5205-a03f-140005a2cfe5",
       "name": "webpack-theme-component-shadowing",
       "version": "1.0.0",
@@ -209,7 +175,7 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby/dist/internal-plugins/webpack-theme-component-shadowing",
       "packageJson": {
         "name": "webpack-theme-component-shadowing",
         "description": "An internal Gatsby plugin which handles configuring webpack to ensure theme components fall back from the user's site to theme modules.",
@@ -223,16 +189,16 @@
         "optionalDependecies": [],
         "bundledDependecies": []
       },
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "80454e25ff6cc0b635a04b6f354ea082",
+        "contentDigest": "00dbcdcb0fca6431efa6a1fb48007017",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
-      "resolve": "/home/samundra/projects/react-resume-profile",
+      "resolve": "/home/samundrak/projects/samundrakc.com.np",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
       "version": "d41d8cd98f00b204e9800998ecf8427e",
@@ -242,7 +208,7 @@
       "nodeAPIs": [],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile",
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np",
       "packageJson": {
         "name": "samundrakc.com.np",
         "version": "0.1.0",
@@ -370,22 +336,22 @@
         "optionalDependecies": [],
         "bundledDependecies": []
       },
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "a3c3745930688559ee7d1445a980fe46",
+        "contentDigest": "39124a2f0c48805363d4bde4db6dcec2",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
-    "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f": {
-      "resolve": "/home/samundra/projects/react-resume-profile/node_modules/gatsby-plugin-page-creator",
-      "id": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
+    "6e9e71f1-450a-509e-884b-2c2b69a799bf": {
+      "resolve": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby-plugin-page-creator",
+      "id": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
       "name": "gatsby-plugin-page-creator",
-      "version": "2.0.5",
+      "version": "2.0.12",
       "pluginOptions": {
         "plugins": [],
-        "path": "/home/samundra/projects/react-resume-profile/src/pages",
+        "path": "/home/samundrak/projects/samundrakc.com.np/src/pages",
         "pathCheck": false
       },
       "nodeAPIs": [
@@ -393,11 +359,11 @@
       ],
       "browserAPIs": [],
       "ssrAPIs": [],
-      "pluginFilepath": "/home/samundra/projects/react-resume-profile/node_modules/gatsby-plugin-page-creator",
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby-plugin-page-creator",
       "packageJson": {
         "name": "gatsby-plugin-page-creator",
         "description": "Gatsby plugin that automatically creates pages from React components in specified directories",
-        "version": "2.0.5",
+        "version": "2.0.12",
         "main": "index.js",
         "keywords": [
           "gatsby",
@@ -416,7 +382,7 @@
           },
           {
             "name": "chokidar",
-            "version": "^1.7.0"
+            "version": "2.1.2"
           },
           {
             "name": "fs-exists-cached",
@@ -454,7 +420,7 @@
           },
           {
             "name": "babel-preset-gatsby-package",
-            "version": "^0.1.3"
+            "version": "^0.1.4"
           },
           {
             "name": "cross-env",
@@ -464,32 +430,30 @@
         "peerDependencies": [
           {
             "name": "gatsby",
-            "version": ">2.0.0-alpha"
+            "version": "^2.0.0"
           }
         ],
         "optionalDependecies": [],
         "bundledDependecies": []
       },
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "ce907b03568e1c9a80a24b433ae7b6dd",
+        "contentDigest": "c0bc7d37f52c17a42935383734bacc08",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
     },
     "Site": {
       "siteMetadata": {},
-      "port": "8000",
+      "port": 8000,
       "host": "localhost",
-      "pathPrefix": "",
-      "polyfill": true,
-      "buildTime": "2019-04-05T11:12:21.205Z",
+      "buildTime": "2019-04-06T16:47:21.275Z",
       "id": "Site",
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "89f5a661e41fdeffa158025a109c175d",
+        "contentDigest": "df9aa73a05fc9ca42ccfe28c95dcb936",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -498,19 +462,20 @@
       "jsonName": "experience-6a7",
       "internalComponentName": "ComponentExperience",
       "path": "/experience/",
-      "component": "/home/samundra/projects/react-resume-profile/src/pages/experience.js",
+      "component": "/home/samundrak/projects/samundrakc.com.np/src/pages/experience.js",
       "componentChunkName": "component---src-pages-experience-js",
+      "isCreatedByStatefulCreatePages": true,
       "context": {},
-      "pluginCreator___NODE": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "pluginCreatorId": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/experience.js",
+      "pluginCreator___NODE": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "pluginCreatorId": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/experience.js",
       "id": "SitePage /experience/",
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6915773812688d32616217cba1a85c6b",
-        "description": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
+        "contentDigest": "d046697497b021a8685ad45d5d3f04b3",
+        "description": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
         "owner": "internal-data-bridge"
       }
     },
@@ -518,19 +483,20 @@
       "jsonName": "index",
       "internalComponentName": "ComponentIndex",
       "path": "/",
-      "component": "/home/samundra/projects/react-resume-profile/src/pages/index.js",
+      "component": "/home/samundrak/projects/samundrakc.com.np/src/pages/index.js",
       "componentChunkName": "component---src-pages-index-js",
+      "isCreatedByStatefulCreatePages": true,
       "context": {},
-      "pluginCreator___NODE": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "pluginCreatorId": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/index.js",
+      "pluginCreator___NODE": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "pluginCreatorId": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/index.js",
       "id": "SitePage /",
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "072b8e17838dc61e82cc808fde6d79c7",
-        "description": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
+        "contentDigest": "27dc9483eb0c56ba4553f1a6bd708c40",
+        "description": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
         "owner": "internal-data-bridge"
       }
     },
@@ -538,19 +504,20 @@
       "jsonName": "projects-9e9",
       "internalComponentName": "ComponentProjects",
       "path": "/projects/",
-      "component": "/home/samundra/projects/react-resume-profile/src/pages/projects.js",
+      "component": "/home/samundrak/projects/samundrakc.com.np/src/pages/projects.js",
       "componentChunkName": "component---src-pages-projects-js",
+      "isCreatedByStatefulCreatePages": true,
       "context": {},
-      "pluginCreator___NODE": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "pluginCreatorId": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/projects.js",
+      "pluginCreator___NODE": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "pluginCreatorId": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/projects.js",
       "id": "SitePage /projects/",
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "6c107da30fdaeecf0bf874b3a551abc2",
-        "description": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
+        "contentDigest": "b5aa0594770d835fb5495700870ca5cf",
+        "description": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
         "owner": "internal-data-bridge"
       }
     },
@@ -558,62 +525,83 @@
       "jsonName": "skills-bfb",
       "internalComponentName": "ComponentSkills",
       "path": "/skills/",
-      "component": "/home/samundra/projects/react-resume-profile/src/pages/skills.js",
+      "component": "/home/samundrak/projects/samundrakc.com.np/src/pages/skills.js",
       "componentChunkName": "component---src-pages-skills-js",
+      "isCreatedByStatefulCreatePages": true,
       "context": {},
-      "pluginCreator___NODE": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "pluginCreatorId": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/skills.js",
+      "pluginCreator___NODE": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "pluginCreatorId": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/skills.js",
       "id": "SitePage /skills/",
-      "parent": "SOURCE",
+      "parent": null,
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "5da97c14c99ce89e79ce77b65898d8b5",
-        "description": "ecfa6566-4a0d-5c3a-a282-efa7df1bb80f",
+        "contentDigest": "00f45727524a23c3590f56ffafe91524",
+        "description": "6e9e71f1-450a-509e-884b-2c2b69a799bf",
         "owner": "internal-data-bridge"
       }
     }
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "7ebbf25b9bf1b38b8e3dfa6e5e57e496"
+    "PLUGINS_HASH": "c96fe17fb8d9314fecb74cf8822f15d7"
   },
   "componentDataDependencies": {
     "nodes": {},
     "connections": {}
   },
   "jsonDataPaths": {
-    "experience-6a7": "563/path---experience-6-a-7-ce2-NZuapzHg3X9TaN1iIixfv1W23E",
+    "experience-6a7": "926/path---experience-6-a-7-ce2-0SUcWyAf8ecbYDsMhQkEfPzV8",
     "experience-35a": "309/path---experience-35-a-735-NZuapzHg3X9TaN1iIixfv1W23E",
     "home-6c4": "22/path---home-6-c-4-351-NZuapzHg3X9TaN1iIixfv1W23E",
-    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
-    "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
-    "projects-9e9": "545/path---projects-9-e-9-957-NZuapzHg3X9TaN1iIixfv1W23E",
+    "dev-404-page-5f9": "386/path---dev-404-page-5-f-9-fab-0SUcWyAf8ecbYDsMhQkEfPzV8",
+    "index": "140/path---index-6a9-0SUcWyAf8ecbYDsMhQkEfPzV8",
+    "projects-9e9": "175/path---projects-9-e-9-957-0SUcWyAf8ecbYDsMhQkEfPzV8",
     "projects-6a7": "972/path---projects-6-a-7-b75-NZuapzHg3X9TaN1iIixfv1W23E",
-    "skills-bfb": "541/path---skills-bfb-591-NZuapzHg3X9TaN1iIixfv1W23E",
+    "skills-bfb": "956/path---skills-bfb-591-0SUcWyAf8ecbYDsMhQkEfPzV8",
     "skills-071": "825/path---skills-071-7ea-NZuapzHg3X9TaN1iIixfv1W23E"
   },
   "components": {
-    "/home/samundra/projects/react-resume-profile/.cache/dev-404-page.js": {
+    "/home/samundrak/projects/samundrakc.com.np/.cache/dev-404-page.js": {
       "query": "",
-      "componentPath": "/home/samundra/projects/react-resume-profile/.cache/dev-404-page.js"
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/.cache/dev-404-page.js",
+      "pages": [
+        "/dev-404-page/"
+      ],
+      "isInBootstrap": true
     },
-    "/home/samundra/projects/react-resume-profile/src/pages/experience.js": {
+    "/home/samundrak/projects/samundrakc.com.np/src/pages/experience.js": {
       "query": "",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/experience.js"
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/experience.js",
+      "pages": [
+        "/experience/"
+      ],
+      "isInBootstrap": true
     },
-    "/home/samundra/projects/react-resume-profile/src/pages/index.js": {
+    "/home/samundrak/projects/samundrakc.com.np/src/pages/index.js": {
       "query": "",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/index.js"
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/index.js",
+      "pages": [
+        "/"
+      ],
+      "isInBootstrap": true
     },
-    "/home/samundra/projects/react-resume-profile/src/pages/projects.js": {
+    "/home/samundrak/projects/samundrakc.com.np/src/pages/projects.js": {
       "query": "",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/projects.js"
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/projects.js",
+      "pages": [
+        "/projects/"
+      ],
+      "isInBootstrap": true
     },
-    "/home/samundra/projects/react-resume-profile/src/pages/skills.js": {
+    "/home/samundrak/projects/samundrakc.com.np/src/pages/skills.js": {
       "query": "",
-      "componentPath": "/home/samundra/projects/react-resume-profile/src/pages/skills.js"
+      "componentPath": "/home/samundrak/projects/samundrakc.com.np/src/pages/skills.js",
+      "pages": [
+        "/skills/"
+      ],
+      "isInBootstrap": true
     }
   },
   "staticQueryComponents": {}

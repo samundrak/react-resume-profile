@@ -8,7 +8,7 @@ var _react = _interopRequireDefault(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _domready = _interopRequireDefault(require("domready"));
+var _domready = _interopRequireDefault(require("@mikaelkristiansson/domready"));
 
 var _socketIo = _interopRequireDefault(require("./socketIo"));
 
@@ -77,6 +77,7 @@ window.___emitter = _emitter.default;
     let Root = preferDefault(require(`./root`));
     (0, _domready.default)(() => {
       renderer(_react.default.createElement(Root, null), rootElement, () => {
+        (0, _loader.postInitialRenderWork)();
         (0, _apiRunnerBrowser.apiRunner)(`onInitialClientRender`);
       });
     });

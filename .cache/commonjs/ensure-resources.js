@@ -130,7 +130,8 @@ class EnsureResources extends _react.default.Component {
 
   render() {
     if (!this.hasResources(this.state.pageResources) && isInitialRender) {
-      // prevent hydrating
+      window.___failedResources = true; // prevent hydrating
+
       throw new Error(`Missing resources for ${this.state.location.pathname}`);
     }
 

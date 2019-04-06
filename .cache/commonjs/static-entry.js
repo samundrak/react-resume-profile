@@ -74,11 +74,22 @@ const getPage = path => pagesObjectMap.get(path);
 
 const createElement = React.createElement;
 
+const sanitizeComponents = components => {
+  if (Array.isArray(components)) {
+    // remove falsy items
+    return components.filter(val => Array.isArray(val) ? val.length > 0 : val);
+  } else {
+    // we also accept single components, so we need to handle this case as well
+    return components ? [components] : [];
+  }
+};
+
 var _default = (pagePath, callback) => {
   let bodyHtml = ``;
   let headComponents = [React.createElement("meta", {
     name: "generator",
-    content: `Gatsby ${gatsbyVersion}`
+    content: `Gatsby ${gatsbyVersion}`,
+    key: `generator-${gatsbyVersion}`
   })];
   let htmlAttributes = {};
   let bodyAttributes = {};
@@ -91,7 +102,7 @@ var _default = (pagePath, callback) => {
   };
 
   const setHeadComponents = components => {
-    headComponents = headComponents.concat(components);
+    headComponents = headComponents.concat(sanitizeComponents(components));
   };
 
   const setHtmlAttributes = attributes => {
@@ -103,11 +114,11 @@ var _default = (pagePath, callback) => {
   };
 
   const setPreBodyComponents = components => {
-    preBodyComponents = preBodyComponents.concat(components);
+    preBodyComponents = preBodyComponents.concat(sanitizeComponents(components));
   };
 
   const setPostBodyComponents = components => {
-    postBodyComponents = postBodyComponents.concat(components);
+    postBodyComponents = postBodyComponents.concat(sanitizeComponents(components));
   };
 
   const setBodyProps = props => {
@@ -117,29 +128,29 @@ var _default = (pagePath, callback) => {
   const getHeadComponents = () => headComponents;
 
   const replaceHeadComponents = components => {
-    headComponents = components;
+    headComponents = sanitizeComponents(components);
   };
 
   const getPreBodyComponents = () => preBodyComponents;
 
   const replacePreBodyComponents = components => {
-    preBodyComponents = components;
+    preBodyComponents = sanitizeComponents(components);
   };
 
   const getPostBodyComponents = () => postBodyComponents;
 
   const replacePostBodyComponents = components => {
-    postBodyComponents = components;
+    postBodyComponents = sanitizeComponents(components);
   };
 
   const page = getPage(pagePath);
   let dataAndContext = {};
 
   if (page.jsonName in dataPaths) {
-    const pathToJsonData = `../public/` + dataPaths[page.jsonName];
+    const pathToJsonData = join(process.cwd(), `/public/static/d`, `${dataPaths[page.jsonName]}.json`);
 
     try {
-      dataAndContext = JSON.parse(fs.readFileSync(`${process.cwd()}/public/static/d/${dataPaths[page.jsonName]}.json`));
+      dataAndContext = JSON.parse(fs.readFileSync(pathToJsonData));
     } catch (e) {
       console.log(`error`, pathToJsonData, e);
       process.exit();

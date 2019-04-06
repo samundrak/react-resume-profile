@@ -18,7 +18,7 @@ var _utils = require("@reach/router/lib/utils");
 
 var _gatsbyReactRouterScroll = require("gatsby-react-router-scroll");
 
-var _domready = _interopRequireDefault(require("domready"));
+var _domready = _interopRequireDefault(require("@mikaelkristiansson/domready"));
 
 var _navigation = require("./navigation");
 
@@ -113,6 +113,7 @@ _loader.default.addProdRequires(_asyncRequires.default);
     const renderer = (0, _apiRunnerBrowser.apiRunner)(`replaceHydrateFunction`, undefined, _reactDom.default.hydrate)[0];
     (0, _domready.default)(() => {
       renderer(_react.default.createElement(NewRoot, null), typeof window !== `undefined` ? document.getElementById(`___gatsby`) : void 0, () => {
+        (0, _loader.postInitialRenderWork)();
         (0, _apiRunnerBrowser.apiRunner)(`onInitialClientRender`);
       });
     });
