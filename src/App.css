@@ -1,17 +1,9 @@
 @import '~antd/dist/antd.css';
-h1 { color: #d04764; font-family: 'Lobster', cursive; font-size: 36px; font-weight: normal; line-height: 48px; margin: 0 0 18px; text-shadow: 1px 0 0 #fff; }
 
+a {
+  color: #d04764;
+}
 
-h2 { color: #2CA4B0; font-family: 'Oleo Script', cursive; font-size: 24px; font-weight: normal; line-height: 32px; margin: 0 0 18px; text-shadow: 1px 0 0 #fff; }
-
-
-p { color: #333; font-family: 'Original Surfer', cursive; font-size: 16px; line-height: 28px; margin: 0 0 24px; }
-
-
-a { color: #d04764; font-family: 'Original Surfer', cursive; }
-
-
-a:hover { text-decoration: underline }
-
-
-
+a:hover {
+  text-decoration: underline;
+}

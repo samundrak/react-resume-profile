@@ -3,6 +3,12 @@ import savetodrive from './images/savetodrive.png';
 import PFConcept from './images/pfconcept.png';
 import BhittePatro from './images/bhittepatro.png';
 import bhadadar from './images/bhadadar.png';
+import colorblind from './images/colorblind.png';
+import dailamaara from './images/dailamaara.jpg';
+import dbsole from './images/demo.gif';
+import esdoc from './images/esdoc.gif';
+import ssm from './images/spritesheetmaker.png';
+import fadkit from './images/fadkit.png';
 
 export default {
   name: 'Samundra Khatri',
@@ -245,11 +251,13 @@ export default {
           name: 'ColorBlind',
           url: 'https://github.com/samundrak/ColorBlind',
           description: 'A Color Matching android game much like color switch.',
+          img: colorblind,
         },
         {
           name: 'DailaMaara',
           url: 'https://github.com/samundrak/Dailamaara',
           description: 'Dahalmaara is cross platform card game made on LibGDX.',
+          img: dailamaara,
         },
       ],
       icon: 'shake',
@@ -262,6 +270,7 @@ export default {
           description:
             'Spritesheet Maker is a application where you will import sprites from any folder into the program. You can decide the padding inside sprite itself new width and hieght of sprite and margin right and bottom between the sprites after that you can click on preview to preview the outcome or click on Generate SpriteSheet button to generate spriteshee…',
           url: 'https://github.com/samundrak/SpriteSheetMaker',
+          img: ssm,
         },
         {
           name: 'JustFast',
@@ -277,6 +286,7 @@ export default {
       items: [
         {
           name: 'DBSole',
+          img: dbsole,
           url: 'https://github.com/samundrak/DBSole',
           description:
             'Access your database from your Google chrome DevTool. No need to switch over terminal or phpMyAdmin just open your console and start querying',
@@ -292,6 +302,7 @@ export default {
           description:
             'See documentation of any javascript api from mozilla on your visual studio code side by side',
           url: 'https://marketplace.visualstudio.com/items?itemName=samundrak.esdoc-mdn',
+          img: esdoc,
         },
       ],
       icon: 'code',
@@ -304,6 +315,7 @@ export default {
           description:
             'A Facebook Application Development Kit .. Facebook Application Development kit (FADkit) is a Facebook apps management script where you can manage many Facebook app types from a single installation. Though it is good to make a single app for particular installation.',
           url: 'https://github.com/samundrak/Facebook-Application-Development-Kit',
+          img: fadkit,
         },
         {
           name: 'Periscope Live streamer',
