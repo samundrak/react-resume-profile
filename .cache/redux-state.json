@@ -197,11 +197,89 @@
         "owner": "internal-data-bridge"
       }
     },
+    "d5c18d83-6ae2-52f0-a3bf-a892203bde4f": {
+      "resolve": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby-plugin-styled-components",
+      "id": "d5c18d83-6ae2-52f0-a3bf-a892203bde4f",
+      "name": "gatsby-plugin-styled-components",
+      "version": "3.0.7",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreateBabelConfig"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "wrapRootElement",
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby-plugin-styled-components",
+      "packageJson": {
+        "name": "gatsby-plugin-styled-components",
+        "description": "Gatsby plugin to add support for styled components",
+        "version": "3.0.7",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "styled-components"
+        ],
+        "author": "Guten Ye <ywzhaifei@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "@babel/runtime",
+            "version": "^7.0.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "@babel/cli",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "@babel/core",
+            "version": "^7.0.0"
+          },
+          {
+            "name": "babel-preset-gatsby-package",
+            "version": "^0.1.4"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.2.0"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "babel-plugin-styled-components",
+            "version": ">1.5.0"
+          },
+          {
+            "name": "gatsby",
+            "version": "^2.0.32"
+          },
+          {
+            "name": "styled-components",
+            "version": ">=2.0.0"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": null,
+      "children": [],
+      "internal": {
+        "contentDigest": "8674cc26f2b8348d0673b428b0ac1cf7",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "7374ebf2-d961-52ee-92a2-c25e7cb387a9": {
       "resolve": "/home/samundrak/projects/samundrakc.com.np",
       "id": "7374ebf2-d961-52ee-92a2-c25e7cb387a9",
       "name": "default-site-plugin",
-      "version": "d41d8cd98f00b204e9800998ecf8427e",
+      "version": "1a2c00f0f5721ac3e3df161c9657c233",
       "pluginOptions": {
         "plugins": []
       },
@@ -222,6 +300,10 @@
             "version": "^0.18.0"
           },
           {
+            "name": "babel-plugin-styled-components",
+            "version": "^1.10.0"
+          },
+          {
             "name": "date-fns",
             "version": "^1.29.0"
           },
@@ -236,6 +318,14 @@
           {
             "name": "eslint-config-react",
             "version": "^1.1.7"
+          },
+          {
+            "name": "gatsby",
+            "version": "^2.0.75"
+          },
+          {
+            "name": "gatsby-plugin-styled-components",
+            "version": "^3.0.7"
           },
           {
             "name": "gh-pages",
@@ -294,10 +384,6 @@
             "version": "^0.1.1"
           },
           {
-            "name": "gatsby",
-            "version": "^2.0.75"
-          },
-          {
             "name": "styled-components",
             "version": "^4.2.0"
           },
@@ -339,7 +425,7 @@
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "39124a2f0c48805363d4bde4db6dcec2",
+        "contentDigest": "943afefea62af8b83cd1acfd11d6861c",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -448,12 +534,14 @@
       "siteMetadata": {},
       "port": 8000,
       "host": "localhost",
-      "buildTime": "2019-04-06T16:47:21.275Z",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2019-04-07T14:50:10.760Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "df9aa73a05fc9ca42ccfe28c95dcb936",
+        "contentDigest": "29e1d53ca7fb8ca9967307f7b416767f",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -545,7 +633,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "c96fe17fb8d9314fecb74cf8822f15d7"
+    "PLUGINS_HASH": "bea0dd14241e0e8590f981eb0137808e"
   },
   "componentDataDependencies": {
     "nodes": {},

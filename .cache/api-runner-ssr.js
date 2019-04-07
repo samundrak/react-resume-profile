@@ -1,4 +1,7 @@
-var plugins = []
+var plugins = [{
+      plugin: require('/home/samundrak/projects/samundrakc.com.np/node_modules/gatsby-plugin-styled-components/gatsby-ssr'),
+      options: {"plugins":[]},
+    }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

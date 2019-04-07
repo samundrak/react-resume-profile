@@ -6,6 +6,7 @@ import MyPhoto from '../me.png';
 import routeComponentMap from '../routeComponentMap';
 import SocialIcons from './SocialIcons';
 import WidgetContainer from '../components/WidgetContainer';
+import Paragraph from './Paragraph';
 
 const { Meta } = Card;
 const { Header, Content, Footer } = Layout;
@@ -50,7 +51,7 @@ const SimpleLayout = ({ source, children }) => (
       <br />
       <div style={{ background: '#fff', paddingLeft: '1%', minHeight: 280 }}>
         <Row>
-          <Col md={6}>
+          <Col sm={24} md={6}>
             <WidgetContainer style={{ justifyContent: 'center', display: 'flex' }}>
               <Card style={{ marginTop: 5 }}>
                 <Meta
@@ -58,7 +59,7 @@ const SimpleLayout = ({ source, children }) => (
                   title={source.name}
                   description={`${source.email} - ${source.address}`}
                 />
-                {source.bio}
+                <Paragraph content={source.bio} />
               </Card>
             </WidgetContainer>
           </Col>

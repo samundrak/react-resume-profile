@@ -17,7 +17,7 @@ class Projects extends React.Component {
       <App>
         {({ projects }) => (
           <Fragment>
-            <Collapse bordered={false} defaultActiveKey={['Familiar']}>
+            <Collapse bordered={false} defaultActiveKey={['Web', 'web']}>
               {projects.map(project => (
                 <Panel
                   header={
@@ -34,11 +34,17 @@ class Projects extends React.Component {
                     dataSource={project.items}
                     renderItem={item => (
                       <List.Item
+                        key={item.name}
                         extra={item.img ? <img width={272} alt="logo" src={item.img} /> : ''}
                       >
                         <List.Item.Meta
                           title={
-                            <a target="_blank" rel="noopener noreferrer" href={item.url}>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              href={item.url}
+                              style={{ textDecoration: 'underline' }}
+                            >
                               {item.name}
                             </a>
                           }
@@ -51,6 +57,14 @@ class Projects extends React.Component {
                         <Popover content={item.description} overlayStyle={{ width: '350px' }}>
                           {limitString(item.description, 150)}
                         </Popover>
+                        <br />
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          href={`https://notes.samundrakc.com.np/project/${item.name.toLowerCase()}`}
+                        >
+                          Read Story...
+                        </a>
                       </List.Item>
                     )}
                   />

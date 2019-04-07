@@ -11,6 +11,12 @@ export default [
     inMenu: true,
   },
   {
+    route: '/projects',
+    component: Projects,
+    name: 'Projects',
+    inMenu: true,
+  },
+  {
     route: '/skills',
     component: Skills,
     name: 'Skills',
@@ -20,12 +26,6 @@ export default [
     route: '/experience',
     component: Experience,
     name: 'Experience',
-    inMenu: true,
-  },
-  {
-    route: '/projects',
-    component: Projects,
-    name: 'Projects',
     inMenu: true,
   },
 ];
