@@ -44,12 +44,8 @@ class Projects extends React.Component {
       }));
     return images;
   }
-  componentDidMount() {
-    console.log(this.context);
-  }
   handleOpenImage(a, b) {
     return () => {
-      console.log(a, b);
       this.setState({
         lightboxIsOpen: true,
         current: this.imageAddressInLightbox.get(`${a}-${b}`).index,

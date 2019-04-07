@@ -7,6 +7,7 @@ import routeComponentMap from '../routeComponentMap';
 import SocialIcons from './SocialIcons';
 import WidgetContainer from '../components/WidgetContainer';
 import Paragraph from './Paragraph';
+import Github from './widgets/Github';
 
 const { Meta } = Card;
 const { Header, Content, Footer } = Layout;
@@ -67,7 +68,8 @@ const SimpleLayout = ({ source, children }) => (
             {children}
           </Col>
           <Col sm={24} md={6}>
-            <WidgetContainer title="Coding,Ranting and Sharing here">
+            <Github username={source.social.github.username} />
+            <WidgetContainer title=" ">
               <SocialIcons social={source.social} />
             </WidgetContainer>
           </Col>

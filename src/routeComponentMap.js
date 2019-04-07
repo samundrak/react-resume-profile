@@ -13,7 +13,7 @@ export default [
   {
     route: '/projects',
     component: Projects,
-    name: 'Projects',
+    name: 'Works',
     inMenu: true,
   },
   {

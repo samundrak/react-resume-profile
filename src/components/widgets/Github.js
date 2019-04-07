@@ -33,7 +33,7 @@ class Github extends React.Component {
     }
     return (
       <Card
-        style={{ width: 300 }}
+        style={{ width: '90%' }}
         loading={this.state.loading}
         actions={[
           <Fragment>
