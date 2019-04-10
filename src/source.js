@@ -14,7 +14,7 @@ export default {
   name: 'Samundra Khatri',
   address: 'Kathmandu, Nepal',
   bio:
-    'Passionate Pragmatic Developer, who loves JavaScript, Frontend and also does backend if it is NodeJS. Loves Software principles, Software Architecture, Design Systems, OOP, System Design, Design Patterns, Web Optimizations',
+    'Passionate Pragmatic Developer who loves JavaScript',
   title: 'Samundra khatri | Javascript Developer | ReactJS Developer | Javascript Developer Nepal',
   email: ['samundrak@yahoo.com'],
   social: {
