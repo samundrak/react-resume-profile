@@ -123,7 +123,7 @@ class Projects extends React.Component {
                           rel="noopener noreferrer"
                           href={`https://notes.samundrakc.com.np/project/${item.name.toLowerCase()}`}
                         >
-                          Read Story...
+                         .
                         </a>
                       </List.Item>
                     )}
