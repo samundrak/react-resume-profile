@@ -27,6 +27,9 @@ export default {
     linkedIn: {
       username: 'samundrak',
     },
+    youtube:{
+      username:'Wholenightss'
+    }
   },
   home: {
     tabs: {
