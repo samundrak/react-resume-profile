@@ -360,6 +360,10 @@
             "version": "^5.2.0"
           },
           {
+            "name": "react-images",
+            "version": "^0.5.19"
+          },
+          {
             "name": "react-router-dom",
             "version": "^4.2.2"
           },
@@ -536,12 +540,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2019-04-07T14:50:10.760Z",
+      "buildTime": "2019-05-24T17:30:57.441Z",
       "id": "Site",
       "parent": null,
       "children": [],
       "internal": {
-        "contentDigest": "29e1d53ca7fb8ca9967307f7b416767f",
+        "contentDigest": "cb5bf776b1633919f3076efbb00e882f",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -633,7 +637,7 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "bea0dd14241e0e8590f981eb0137808e"
+    "PLUGINS_HASH": "f1f69cf79008549c0001e4f33880d432"
   },
   "componentDataDependencies": {
     "nodes": {},

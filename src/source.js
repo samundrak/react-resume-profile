@@ -13,8 +13,7 @@ import fadkit from './images/fadkit.png';
 export default {
   name: 'Samundra Khatri',
   address: 'Kathmandu, Nepal',
-  bio:
-    'Passionate Pragmatic Developer who loves JavaScript',
+  bio: 'Passionate Pragmatic Developer who loves JavaScript',
   title: 'Samundra khatri | Javascript Developer | ReactJS Developer | Javascript Developer Nepal',
   email: ['samundrak@yahoo.com'],
   social: {
@@ -27,9 +26,9 @@ export default {
     linkedIn: {
       username: 'samundrak',
     },
-    youtube:{
-      username:'Wholenightss'
-    }
+    youtube: {
+      username: 'Wholenightss',
+    },
   },
   home: {
     tabs: {

@@ -23,6 +23,7 @@ export function getFullURLfromUsername(social, username) {
     linkedIn: `linkedin.com/in/${username}`,
     twitter: `twitter.com/${username}`,
     github: `github.com/${username}`,
+    youtube: `youtube.com/user/${username}`,
   };
   return `${protocolWithTLD}${links[social]}`;
 }
